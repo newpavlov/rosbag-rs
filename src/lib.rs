@@ -50,7 +50,6 @@
 //! }
 //! # Ok(()) }
 //! ```
-#![doc(html_root_url = "https://docs.rs/rosbag/0.5.0")]
 #![warn(missing_docs, rust_2018_idioms)]
 
 use memmap2::Mmap;
