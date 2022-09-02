@@ -81,7 +81,7 @@ additional terms or conditions.
 [docs-link]: https://docs.rs/rosbag
 [rustc-image]: https://img.shields.io/badge/rustc-1.56+-blue.svg
 [license-image]: https://img.shields.io/badge/license-Apache2.0/MIT-blue.svg
-[build-image]: https://github.com/SkoltechRobotics/rosbag-rs/actions/workflows/rosbag.yml/badge.svg
-[build-link]: https://github.com/SkoltechRobotics/rosbag-rs/actions/workflows/rosbag.yml
-[deps-image]: https://deps.rs/repo/github/SkoltechRobotics/rosbag-rs/status.svg
-[deps-link]: https://deps.rs/repo/github/SkoltechRobotics/rosbag-rs
+[build-image]: https://github.com/newpavlov/rosbag-rs/actions/workflows/rosbag.yml/badge.svg
+[build-link]: https://github.com/newpavlov/rosbag-rs/actions/workflows/rosbag.yml
+[deps-image]: https://deps.rs/repo/github/newpavlov/rosbag-rs/status.svg
+[deps-link]: https://deps.rs/repo/github/newpavlov/rosbag-rs
