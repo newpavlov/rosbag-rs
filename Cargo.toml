@@ -1,6 +1,6 @@
 [package]
 name = "rosbag"
-version = "0.6.0" # Also update html_root_url in lib.rs when bumping this
+version = "0.6.1"
 description = "Utilities for reading ROS bag files."
 authors = ["Artyom Pavlov <newpavlov@gmail.com>"]
 license = "MIT OR Apache-2.0"
@@ -8,7 +8,7 @@ edition = "2021"
 rust-version = "1.56"
 readme = "README.md"
 documentation = "https://docs.rs/rosbag"
-repository = "https://github.com/SkoltechRobotics/rosbag-rs"
+repository = "https://github.com/newpavlov/rosbag-rs"
 keywords = ["ros", "datasets", "robotics"]
 categories = ["parser-implementations", "science::robotics"]
 
