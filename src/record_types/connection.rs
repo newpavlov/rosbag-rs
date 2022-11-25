@@ -73,7 +73,7 @@ impl<'a> RecordGen<'a> for Connection<'a> {
                 "latching" => {
                     latching = match val {
                         b"1" => true,
-                        b"0" => false,
+                        b"0" | b"" => false,
                         _ => return Err(Error::InvalidRecord),
                     }
                 }
