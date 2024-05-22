@@ -74,6 +74,10 @@ impl<'a> RecordGen<'a> for Connection<'a> {
                     latching = match val {
                         b"1" => true,
                         b"0" => false,
+                        b"" => {
+                            log::warn!("Got empty latching field, interpreting it as 0");
+                            false
+                        }
                         _ => return Err(Error::InvalidRecord),
                     }
                 }
