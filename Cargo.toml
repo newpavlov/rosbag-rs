@@ -14,7 +14,7 @@ categories = ["parser-implementations", "science::robotics"]
 
 [dependencies]
 byteorder = "1.1"
-bzip2 = "0.4.3"
+bzip2 = "0.4.4"
 base16ct = "0.2"
 log = "0.4.4"
 lz4 = "1.23.2"
