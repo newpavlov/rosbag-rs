@@ -51,13 +51,6 @@ for record in bag.index_records() {
 }
 ```
 
-## Minimum Supported Rust Version
-
-Rust **1.56** or higher.
-
-Minimum supported Rust version can be changed in the future, but it will be
-done with a minor version bump.
-
 ## License
 
 The crate is licensed under either of

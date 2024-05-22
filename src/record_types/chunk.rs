@@ -19,10 +19,10 @@ pub enum Compression {
 
 impl Compression {
     fn decompress(self, data: &[u8], decompressed_size: Option<u32>) -> Result<Cow<'_, [u8]>> {
+        let decompressed_len = decompressed_size.map(|s| s as usize).unwrap_or(data.len());
         Ok(match self {
             Compression::Bzip2 => {
-                let mut decompressed = Vec::new();
-                decompressed.reserve(decompressed_size.map(|s| s as usize).unwrap_or(data.len()));
+                let mut decompressed = Vec::with_capacity(decompressed_len);
                 let mut decompressor = bzip2::Decompress::new(false);
                 decompressor
                     .decompress_vec(data, &mut decompressed)
@@ -32,8 +32,7 @@ impl Compression {
             Compression::Lz4 => {
                 let mut decoder = lz4::Decoder::new(data)
                     .map_err(|e| Error::Lz4DecompressionError(e.to_string()))?;
-                let mut decompressed = Vec::new();
-                decompressed.reserve(decompressed_size.map(|s| s as usize).unwrap_or(data.len()));
+                let mut decompressed = Vec::with_capacity(decompressed_len);
                 std::io::copy(&mut decoder, &mut decompressed).map_err(|_| {
                     Error::Lz4DecompressionError("Error while decoding".to_string())
                 })?;
