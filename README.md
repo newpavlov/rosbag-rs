@@ -72,7 +72,7 @@ additional terms or conditions.
 [crate-link]: https://crates.io/crates/rosbag
 [docs-image]: https://docs.rs/rosbag/badge.svg
 [docs-link]: https://docs.rs/rosbag
-[rustc-image]: https://img.shields.io/badge/rustc-1.56+-blue.svg
+[rustc-image]: https://img.shields.io/badge/rustc-1.63+-blue.svg
 [license-image]: https://img.shields.io/badge/license-Apache2.0/MIT-blue.svg
 [build-image]: https://github.com/newpavlov/rosbag-rs/actions/workflows/rosbag.yml/badge.svg
 [build-link]: https://github.com/newpavlov/rosbag-rs/actions/workflows/rosbag.yml
